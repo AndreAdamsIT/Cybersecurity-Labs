@@ -37,3 +37,17 @@ Purpose: Displays text in the terminal.
 Example:
 
 echo "Hello World!"
+
+## Comments
+Linux ignores anything after the # symbol on a line.
+
+Purpose: Add notes and explanations that Linux ignores.
+
+Syntax:
+
+# This is a comment
+
+Example:
+
+# Print a welcome message
+echo "Hello World!"
