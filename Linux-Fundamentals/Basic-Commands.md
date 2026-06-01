@@ -29,3 +29,11 @@ Purpose: Displays the contents of a file.
 
 Example:
 cat notes.txt
+
+## echo
+
+Purpose: Displays text in the terminal.
+
+Example:
+
+echo "Hello World!"
