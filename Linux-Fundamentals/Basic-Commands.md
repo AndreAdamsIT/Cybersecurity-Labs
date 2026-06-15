@@ -31,7 +31,6 @@ Example:
 cat notes.txt
 
 ## echo
-
 Purpose: Displays text in the terminal.
 
 Example:
@@ -53,11 +52,9 @@ Example:
 echo "Hello World!"
 
 ## touch
-
 Purpose: Creates a new empty file.
 
 Example:
-
 touch hello.txt
 
 Notes:
