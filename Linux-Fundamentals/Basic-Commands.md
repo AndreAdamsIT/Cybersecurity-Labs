@@ -51,3 +51,17 @@ Example:
 
 # Print a welcome message
 echo "Hello World!"
+
+## touch
+
+Purpose: Creates a new empty file.
+
+Example:
+
+touch hello.txt
+
+Notes:
+- Creates an empty file.
+- Can create multiple files at once:
+  touch file1.txt file2.txt file3.txt
+- If the file already exists, it updates the timestamp instead of overwriting the file.
