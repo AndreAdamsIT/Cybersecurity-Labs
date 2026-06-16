@@ -63,6 +63,34 @@ Notes:
   touch file1.txt file2.txt file3.txt
 - If the file already exists, it updates the timestamp instead of overwriting the file.
 
+## wc
+
+Purpose: Counts lines, words, characters, or bytes in a file.
+
+Example:
+
+wc -l access.log
+
+Explanation:
+Counts the number of lines in the file `access.log`.
+
+Notes:
+- `-l` = Count lines
+- `-w` = Count words
+- `-c` = Count bytes
+- `-m` = Count characters
+
+Real-World Use:
+IT and cybersecurity professionals use `wc` to quickly see how large log files are or how many entries a file contains.
+
+Examples:
+
+wc -l access.log
+
+wc -w notes.txt
+
+wc -c file.txt
+
 ## grep
 
 Purpose: Searches the contents of files for specific text or patterns.
@@ -90,6 +118,79 @@ IT Support and Cybersecurity professionals use `grep` to search log files, confi
 
 Examples:
 grep "error" system.log
+
 grep "admin" users.txt
+
 grep -i "failed" auth.log
+
 grep -R "password" /etc/
+
+## Shell Operators
+
+### &
+Purpose: Runs a command in the background.
+
+Example:
+```bash
+cp largefile.txt backup/ &
+```
+
+---
+
+### &&
+Purpose: Runs the next command only if the first command succeeds.
+
+Example:
+```bash
+cd Documents && ls
+```
+
+---
+
+### >
+Purpose: Redirects output to a file and overwrites the existing contents.
+
+Example:
+```bash
+echo "password123" > passwords
+```
+
+---
+
+### >>
+Purpose: Appends output to the end of a file without overwriting existing content.
+
+Example:
+```bash
+echo "tryhackme" >> passwords
+```
+
+---
+
+### Notes
+- `>` replaces the contents of a file.
+- `>>` adds new content to the end of a file.
+- `&&` is useful for running multiple commands in sequence.
+- `&` allows a command to run in the background while you continue using the terminal.
+
+## Real-World Examples
+
+```bash
+cp largefile.txt backup/ &
+```
+Runs the copy command in the background so you can keep using the terminal.
+
+```bash
+cd Documents && ls
+```
+Changes into the Documents folder, then lists its contents if the `cd` command succeeds.
+
+```bash
+echo "password123" > passwords
+```
+Creates or overwrites the `passwords` file with the text `password123`.
+
+```bash
+echo "tryhackme" >> passwords
+```
+Adds `tryhackme` to the end of the `passwords` file without deleting the existing contents.
