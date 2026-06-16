@@ -125,54 +125,6 @@ grep -i "failed" auth.log
 
 grep -R "password" /etc/
 
-## Shell Operators
-
-### &
-Purpose: Runs a command in the background.
-
-Example:
-```bash
-cp largefile.txt backup/ &
-```
-
----
-
-### &&
-Purpose: Runs the next command only if the first command succeeds.
-
-Example:
-```bash
-cd Documents && ls
-```
-
----
-
-### >
-Purpose: Redirects output to a file and overwrites the existing contents.
-
-Example:
-```bash
-echo "password123" > passwords
-```
-
----
-
-### >>
-Purpose: Appends output to the end of a file without overwriting existing content.
-
-Example:
-```bash
-echo "tryhackme" >> passwords
-```
-
----
-
-### Notes
-- `>` replaces the contents of a file.
-- `>>` adds new content to the end of a file.
-- `&&` is useful for running multiple commands in sequence.
-- `&` allows a command to run in the background while you continue using the terminal.
-
 ## Real-World Examples
 
 ```bash
